@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Hover Card</title>
+	<style type="text/css">
+		body{
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			min-height: 90vh;
+			background: #ccc;
+			font-family: arial;
+		}
+		.main_card{
+			width: 300px;
+			height: 400px;
+			background: #fff;
+			border-radius: 10px;
+			box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+			position: relative;
+			transition: all 0.5s;
+			background: linear-gradient(to bottom, #eee, #ddd);
+		}
+		.card_pocket_outer{
+			width: 100%;
+			height: 100%;
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			border-radius:10px;
+			overflow: hidden;
+		}
+		.card_pocket{
+			width: 100%;
+			height: 60%;
+			background: linear-gradient(to right, #eee, #ddd);
+			position: absolute;
+			bottom: 0px;
+			left: 0px;
+			right: 0px;
+			margin: auto;
+			box-shadow: 0px -5px  10px rgba(0,0,0,0.2);
+			justify-content: center;
+			align-items: center;
+			display: flex;
+			font-family: impact;
+			letter-spacing: 3px;
+			color: #999;
+			text-transform: uppercase;
+		}
+		.card_img{
+			width: 80%;
+			height: 80%;
+			background: url(dhindora.png)center no-repeat;
+			background-size: cover;
+			margin: auto;
+			border-radius: 10px;
+			transition: all 0.5s;
+			transform: translateY(20px);
+		}
+
+		.main_card:hover{
+			box-shadow: 0px 0px 100px rgba(0,0,0,0.2);
+			transform: rotate(-10deg) scale(1.1);
+		}
+		.main_card:hover .card_img{
+			transform: translateY(-50px);
+		}
+	</style>
+</head>
+<body>
+	<div class="main_card">
+		<div class="card_img"></div>
+		<div class="card_pocket_outer">
+			<div class="card_pocket">
+				<h1>Dhindora</h1>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
