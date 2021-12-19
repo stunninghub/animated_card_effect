@@ -1,4 +1,4 @@
-# animated_card_effect
+# Animated Card Effect
 
 Let's create an animated card effect by using pure CSS.
 
